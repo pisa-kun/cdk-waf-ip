@@ -18,6 +18,9 @@ export class WafRegionValidator implements IValidation {
         if (this.scopeType === "CLOUDFRONT" && this.region !== "us-east-1") {
             errors.push("Region must be us-east-1 when CLOUDFRONT.");
         }
+        // if (this.scopeType === "CLOUDFRONT" && this.region !== "ap-northeast-1") {
+        //     errors.push("Region must be ap-northeast-1 when CLOUDFRONT.");
+        // }
         return errors;
     }
 }

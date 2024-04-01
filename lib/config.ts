@@ -9,12 +9,13 @@ export interface ConfigStackProps extends StackProps{
 }
 
 // cdk-waf-ipでこの変数を呼び出す
-export const ConfigStackProps: ConfigStackProps = {
+export const configStackProps: ConfigStackProps = {
     config: {
         scopeType: "CLOUDFRONT",
     },
     // デプロイするリージョン指定
     env: {
         region: "us-east-1",
+        // region: "ap-northeast-1",
     },
 };
